@@ -1,0 +1,235 @@
+body {
+    background-color: hsl(185, 41%, 84%);
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Space Mono", monospace;
+}
+
+.splitter {
+    margin: 3rem;
+}
+form {
+    margin: auto; 
+    background-color: hsl(0, 100%, 100%);
+    border-radius: 20px 20px 0 0;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+}
+label {
+    color: hsl(186, 14%, 43%);
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+}
+input {
+    border: none;
+    border-radius: 2px;
+    width: 100%;
+    padding: 12px 0;
+    font-size: 24px;
+    color: hsl(183, 100%, 15%);
+    text-align: right;
+}
+input:focus {
+    border: none;
+    outline: none;
+}
+#bill{
+    background: url("images/icon-dollar.svg") no-repeat 14px center;
+    background-color: hsl(189, 47%, 97%);
+}
+#people {
+    background: url("images/icon-person.svg") no-repeat 14px center;
+    background-color: hsl(189, 47%, 97%);
+}
+section ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%; 
+    gap: 23px;
+    padding: 0;
+    margin: 0;
+}
+
+section ul li {
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 5px;
+    margin: 7px 0;
+    padding: 4% 17%;
+    width: 50px; 
+    text-align: center;
+    color:  hsl(189, 47%, 97%);
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.percent input.custom-input {
+    all: unset; /* resets weird default input styles */
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(189, 47%, 97%);
+    border-radius: 5px;
+    padding: 0;
+    cursor: text;
+}
+section ul li input::placeholder{
+    padding: 0 4px;
+    color: hsl(186, 14%, 43%);
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+
+section ul li:hover {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .custom-input {
+    width: 100%;
+    padding-right: 30px;
+    text-align: center;
+  }
+  
+  .percent-symbol {
+    position: absolute;
+    right: 1px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: hsl(183, 100%, 15%);
+    pointer-events: none;
+    font-size: 20px;
+  }
+  
+
+.percent:nth-child(6) {
+    background-color: hsl(189, 47%, 97%);
+    color: hsl(186, 14%, 43%);
+}
+.result {
+    margin-top: 5%;
+    margin-bottom: 0;
+    width: 100%;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+}
+.result article {
+    padding: 6% 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tip, .tips {
+    color: hsl(0, 100%, 100%);
+}
+.tip span, .tips span {
+   color: hsl(186, 14%, 43%); 
+}
+  
+  .price {
+    color: hsl(172, 67%, 45%);
+} 
+button {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    width: 85%;
+    margin: auto 8%;
+    margin-bottom: 8%;
+    padding: 5% 10%;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+/* smaller screen */
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0;
+        font-size: 18px;
+        padding: 10px;
+    }
+    form {
+        padding: 2rem;
+        gap: 20px;
+    }
+    section ul li {
+        width: 75px;
+        padding: 3% 9%;
+        font-size: 16px;
+    }
+    button {
+        padding: 5% 10%;
+        margin: 1.3rem;
+    }
+   
+}
+/* Desktop view */
+@media screen and (min-width: 1024px) {
+    .splitter {
+        margin: 3rem 0 7rem 0;
+    }
+    form {
+        width: 50%;
+        max-width: 50rem;
+        gap: 30px;
+        margin-bottom: 0;
+        margin-top: -5rem;
+        padding: 1rem 2rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+    }
+    section ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 15px 5px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    
+    section ul li {
+        flex: 0 0 calc(33.33% - 15px);
+        background-color: hsl(183, 100%, 15%);
+        color: hsl(189, 47%, 97%);
+        font-weight: 700;
+        border-radius: 5px;
+        padding: 8px 5px;
+        font-size: 18px;
+    }
+    .result {
+        width: 100%;
+        font-size: 18px;
+    }
+    .result article {
+        margin: 0;
+        padding: 5% 7%;
+    }
+    .tips {
+        margin-top: -33px;
+    }
+    button {
+        margin-top: 41px;    
+    }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img src="images/logo.svg" class="splitter" alt="logo">
+          <form id="tip-form">
+            <div class="container">
+                 <label for="bill">Bill</label>
+                <input type="number" id="bill" class="bill">
+
+                <label for="tip">Select Tip%</label> 
+            <section class="tip-selector" id="tip">
+                <ul>
+                    <li class="percent" data-value="5">5%</li>
+                    <li class="percent" data-value="10">10%</li>
+                    <li class="percent" data-value="15">15%</li>
+                    <li class="percent" data-value="25">25%</li>
+                    <li class="percent" data-value="50">50%</li>
+                    <li class="percent custom-wrapper">
+                        <div class="custom-container">
+                          <input type="number" class="custom-input" placeholder="Custom" min="1">
+                          <span class="percent-symbol">%</span>
+                        </div>
+                      </li>
+                      
+                </ul>
+                
+            </section>
+                <label for="people">Number of people</label>
+                <input type="number" id="people" required>
+            </div>
+            <div id="result" class="result">
+                <article class="cost">
+                    <p class="tip">Tip Amount <span><br>/person</span> </p><p class="price">$0.00</p>
+                </article>
+                <article class="cost">
+                    <p class="tips">Total <span><br>/person </span> </p><p class="tips price">$0.00</p>
+                </article>
+                <button type="submit">RESET</button>
+            </div>
+        </form>
+
+    <script src="main.js"></script>
+</body>
+</html>
