@@ -46,12 +46,17 @@ learned the fundamentals of javascript
 
 ### Continued development you found useful that you want to refine and perfect.
 
-I need to focus more on my javascript.  
+1. Adjust the heading SPLITTER to a single line
+2. space between custom and % 
+3. Move number of people place holder above the tip button
+4. grade out tip button by default
+5. grade out button should only be clickable after the user as selected both bill and number of person
 
 ## Author
 
 - Website - https://github.com/horleyoung
 - Frontend Mentor - https://www.frontendmentor.io/profile/horleyoung
+- The link to calculator - https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX
 - 
 ## Acknowledgments
 I got the tip from chatgpt for now.
